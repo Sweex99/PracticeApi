@@ -8,9 +8,10 @@ class Users::SessionsController < ApplicationController
   param :password, String, desc: 'password of the requested user', :required => true
   def create
      @user = User.find_by(email: params[:email])
+     #render json: @user.as_json(only: [:id, :email, :name, :password, :authentication_token]), status: 200, message: 'success'
 
     if @user.valid_password?("#{params[:password]}")
-     render json: @user.as_json(only: [:id, :email, :name, :password, :authentication_token]), status: :ok
+     render json: @user.as_json(only: [:id, :email, :name, :password, :authentication_token]), status: 200, message: 'success'
     else
       head(:unauthorized)
     end
