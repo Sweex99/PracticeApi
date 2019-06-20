@@ -11,7 +11,7 @@ module Users
 
       body = JSON.parse(response.body)
       if body['name'] == @user.name
-        puts @user.encrypted_password
+        puts @user.authenticate_token
        assert_response 200
       end
     end
