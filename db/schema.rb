@@ -22,7 +22,7 @@ ActiveRecord::Schema.define(version: 2019_06_20_192448) do
     t.datetime "updated_at", null: false
   end
 
-  create_table "users", force: :cascade do |t|
+  create_table "v1", force: :cascade do |t|
     t.string "name"
     t.string "email", default: "", null: false
     t.string "encrypted_password", default: "", null: false
