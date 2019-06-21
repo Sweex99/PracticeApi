@@ -7,6 +7,9 @@ gem 'apipie-rails'
 gem 'devise'
 gem 'simple_token_authentication'
 gem 'rspec-rails'
+gem 'factory_girl_rails'
+gem 'faker'
+
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.2.3'
