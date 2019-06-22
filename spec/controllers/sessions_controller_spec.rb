@@ -10,10 +10,9 @@ describe V1::SessionsController do
 
       post :create, params: {email: email, password: password}
 
-       if expect(response).to be_successful
-         puts "The test was successful. Params: email => #{email} and password => #{password}"
-       end
+      if expect(response).to be_successful
+        puts 'Test was successful'
+      end
     end
-
   end
 end
