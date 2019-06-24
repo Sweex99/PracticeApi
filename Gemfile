@@ -8,6 +8,7 @@ gem 'devise'
 gem 'simple_token_authentication'
 gem 'rspec-rails'
 gem 'factory_girl_rails'
+gem 'json_spec'
 gem 'faker'
 
 
