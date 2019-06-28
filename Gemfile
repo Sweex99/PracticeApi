@@ -10,7 +10,7 @@ gem 'rspec-rails'
 gem 'factory_girl_rails'
 gem 'json_spec'
 gem 'faker'
-
+gem 'activerecord-import'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.2.3'
