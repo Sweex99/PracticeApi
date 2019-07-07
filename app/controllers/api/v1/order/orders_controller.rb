@@ -1,10 +1,10 @@
 class Api::V1::Order::OrdersController < ApplicationController
   def_param_group :order do
     param :order, Hash do
-      param :user_id, Integer, 'asd'
-      param :priority, String, 'asd'
-      param :description, String, 'asd'
-      param :item_id, Integer, 'asd'
+      param :user_id, Integer, 'User`s id'
+      param :priority, String, 'Priority'
+      param :description, String, 'Description of current order'
+      param :item_id, Integer, 'Item`s id'
     end
   end
 

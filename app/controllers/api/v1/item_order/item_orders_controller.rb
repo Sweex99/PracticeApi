@@ -1,8 +1,8 @@
 class Api::V1::ItemOrder::ItemOrdersController < ApplicationController
   def_param_group :order_item do
     param :order_item, Hash do
-      param :order_id, Integer, 'Foreign key with Order Model'
-      param :item_id, Integer, 'Foreign key with Item Model'
+      param :order_id, Integer, 'Foreign with Order Model'
+      param :item_id, Integer, 'Foreign with Item Model'
     end
   end
 
